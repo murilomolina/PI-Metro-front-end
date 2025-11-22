@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --blue: #001489; /* azul metro */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-blue: var(--blue); /* <-- aqui você redefine o "blue" */
+
+  /* Tons mais claros (mistura com branco) */
+  --color-blue-50:  color-mix(in srgb, var(--blue) 10%, white);
+  --color-blue-100: color-mix(in srgb, var(--blue) 20%, white);
+  --color-blue-200: color-mix(in srgb, var(--blue) 30%, white);
+  --color-blue-300: color-mix(in srgb, var(--blue) 40%, white);
+  --color-blue-400: color-mix(in srgb, var(--blue) 60%, white);
+
+  /* Tons mais escuros (mistura com preto) */
+  --color-blue-600: color-mix(in srgb, var(--blue) 90%, black);
+  --color-blue-700: color-mix(in srgb, var(--blue) 80%, black);
+  --color-blue-800: color-mix(in srgb, var(--blue) 70%, black);
+  --color-blue-900: color-mix(in srgb, var(--blue) 60%, black);
+
+
+  --color-gray-800: var(--color-blue-800);
+  --color-gray-900: var(--color-blue-900);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #112714
+;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+  height: 100%;
+}
