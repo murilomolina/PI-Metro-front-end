@@ -24,20 +24,20 @@ export default async function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {/* Card 1 */}
             <Link
-              href="/dashboard/apps/bim"
-              className="group flex flex-col items-center justify-between bg-gradient-to-tl from-blue-400 to-blue-700 text-white rounded-xl shadow-lg hover:scale-105 transition-all p-4 sm:p-6 space-y-3 sm:space-y-4 backdrop-blur-md"
+              href="/dashboard/apps/obras"
+              className="group flex flex-col items-center justify-between bg-gradient-to-tl from-blue-500 to-blue-900 text-white rounded-xl shadow-lg hover:scale-105 transition-all p-4 sm:p-6 space-y-3 sm:space-y-4 backdrop-blur-md"
             >
-              <Image className="object-contain h-16 sm:h-24" src='/assets/images/metro_logo.png' alt="Cam" quality={100} width={150} height={150} />
-              <h2 className="text-md sm:text-lg font-semibold tracking-wide text-white">BIM</h2>
+              <Image className="object-contain h-16 sm:h-24" src='/assets/images/logo.png' alt="APP" width={150} height={150} />
+              <h2 className="text-md sm:text-lg font-semibold tracking-wide text-white">Análise de obra</h2>
             </Link>
 
             {/* Card 2 */}
             <Link
-              href="/dashboard/apps/obras"
-              className="group flex flex-col items-center justify-between bg-gradient-to-tl from-indigo-400 to-indigo-700 text-white rounded-xl shadow-lg hover:scale-105 transition-all p-4 sm:p-6 space-y-3 sm:space-y-4 backdrop-blur-md"
+              href="/dashboard/apps/bim"
+              className="group flex flex-col items-center justify-between bg-gradient-to-tl from-blue-900 to-blue-500 text-white rounded-xl shadow-lg hover:scale-105 transition-all p-4 sm:p-6 space-y-3 sm:space-y-4 backdrop-blur-md"
             >
-              <Image className="object-contain h-16 sm:h-24" src='/assets/images/metro_logo.png' alt="APP" width={150} height={150} />
-              <h2 className="text-md sm:text-lg font-semibold tracking-wide text-white">Obras</h2>
+              <Image className="object-contain h-16 sm:h-24" src='/assets/images/logo.png' alt="Cam" quality={100} width={150} height={150} />
+              <h2 className="text-md sm:text-lg font-semibold tracking-wide text-white">Exibe .ifc</h2>
             </Link>
           </div>
         </div>
