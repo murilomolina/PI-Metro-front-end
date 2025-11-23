@@ -82,7 +82,7 @@ export default function Obras() {
           type="file"
           accept="image/*"
           onChange={handleSelect}
-          className="w-full text-white file:bg-blue-600 file:border-none file:px-4 file:py-2 file:rounded-lg file:text-white file:cursor-pointer file:hover:bg-blue-700"
+          className="w-full text-white file:bg-blue-500 file:hover:bg-indigo-600 file:transition-colors file:border-none file:px-4 file:py-2 file:rounded-lg file:text-white file:cursor-pointer file:hover:bg-blue-700"
         />
 
         {preview && (
@@ -98,7 +98,7 @@ export default function Obras() {
 
         <button
           onClick={handleUpload}
-          className="mt-6 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-xl transition"
+          className="mt-6 w-full bg-blue-500 hover:bg-indigo-600 transition-colors text-white font-semibold py-2 rounded-xl"
         >
           Enviar imagem
         </button>

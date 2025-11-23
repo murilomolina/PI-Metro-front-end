@@ -37,7 +37,7 @@ export default async function Page() {
               className="group flex flex-col items-center justify-between bg-gradient-to-tl from-blue-900 to-blue-500 text-white rounded-xl shadow-lg hover:scale-105 transition-all p-4 sm:p-6 space-y-3 sm:space-y-4 backdrop-blur-md"
             >
               <Image className="object-contain h-16 sm:h-24" src='/assets/images/logo.png' alt="Cam" quality={100} width={150} height={150} />
-              <h2 className="text-md sm:text-lg font-semibold tracking-wide text-white">Exibe .ifc</h2>
+              <h2 className="text-md sm:text-lg font-semibold tracking-wide text-white">Visualizador BIM</h2>
             </Link>
           </div>
         </div>
