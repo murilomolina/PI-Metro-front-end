@@ -9,7 +9,6 @@ const links = [
   { name: "Dashboard", href: "/dashboard/", icon: Icons.Squares2X2Icon },
   { name: "Apps", href: "/dashboard/apps", icon: Icons.CubeIcon },
   { name: "Settings", href: "/dashboard/settings", icon: Icons.Cog6ToothIcon },
-  // { name: "Calendar", href: "/dashboard/calendar", icon: Icons.CalendarIcon },
   { name: "Site", href: "/", icon: Icons.HomeIcon },
 ];
 

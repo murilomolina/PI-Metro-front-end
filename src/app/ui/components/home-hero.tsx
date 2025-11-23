@@ -18,7 +18,7 @@ export default function HomeHero() {
       />
 
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 animate-gradient-x mb-6 max-w-4xl drop-shadow-lg">
-        Plataforma de Gestão de Progresso de Obras
+        Plataforma de Gestão de Obras
       </h1>
 
       <p className="max-w-xl text-blue-300 text-lg md:text-xl mb-10 leading-relaxed">

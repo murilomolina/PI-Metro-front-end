@@ -14,7 +14,7 @@ const MainProjects = () => {
           {/* Image Section */}
           <div className="w-full md:w-1/2 relative h-72 md:h-96 rounded-xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
             <Image
-              src={"https://imgs.search.brave.com/CspjXjD_lrNnElBURoS_F8-ZbGMu-g4UjB2oMXnT_aA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDUv/MDg0LzU1My9zbWFs/bC9zY3JlZW4td2l0/aC1odWQtaW50ZXJm/YWNlLWVsZW1lbnRz/LXNldC1pbi1jb250/cm9sLWluZm9ncmFw/aGljLWRpZ2l0YWwt/aWxsdXN0cmF0aW9u/LWZyZWUtdmVjdG9y/LmpwZw"}
+              src={"https://imgs.search.brave.com/ifU-pkEFZofAqy7MEMvfV_46u_wbU5aqmUW3XBG0_mU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tb251/di5jb20uYnIvd3At/Y29udGVudC91cGxv/YWRzL2VsZW1lbnRv/ci90aHVtYnMvbW9u/aXRvcmFtZW50by1v/YnJhcy10aW1lbGFw/c2Utdm1zLXFzMWdp/c2c5dXRmc2cwOGF0/bHR3cXV1eXB1Nmdj/MmU1OG0wNHQ5cTAz/ay5qcGc"}
               alt="Projeto 1"
               fill
               className="object-cover"
@@ -24,10 +24,10 @@ const MainProjects = () => {
           {/* Text Section */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
             <h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-blue-300 via-blue-500 to-blue-600 text-transparent bg-clip-text drop-shadow-lg">
-              Gráficos
+              Análise detalhada da obra
             </h2>
             <p className="text-lg sm:text-xl text-blue-100 leading-relaxed max-w-lg mx-auto md:mx-0">
-              Acompanhe o progresso da obra com gráficos detalhados que mostram o andamento das tarefas, prazos e recursos utilizados, permitindo uma gestão eficiente e informada.
+              Nossa inteligência artificial realiza uma análise detalhada das imagens da obra, identificando estruturas, materiais, progresso da construção e possíveis inconsistências, fornecendo informações precisas para tomada de decisões rápidas e eficientes.
             </p>
           </div>
         </div>

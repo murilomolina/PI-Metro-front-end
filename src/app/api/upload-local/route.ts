@@ -15,7 +15,7 @@ export async function POST(req: Request) {
   // gera id único
   const id = crypto.randomBytes(4).toString("hex");
 
-  const home = "/home/murilo/uploads";
+  const home = "/home/ubuntu/uploads";
   await fs.mkdir(home, { recursive: true });
 
   const inputPath = path.join(home, `${id}-input.png`);

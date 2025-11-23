@@ -7,7 +7,7 @@ export async function GET(req: Request) {
 
   if (!id) return NextResponse.json({ error: "missing id" }, { status: 400 });
 
-  const jsonPath = `/home/murilo/uploads/${id}.json`;
+  const jsonPath = `/home/ubuntu/uploads/${id}.json`;
   console.log(`${id}`);
 
   try {
