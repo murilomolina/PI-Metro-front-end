@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Obras() {
   const [preview, setPreview] = useState<string | null>(null);
@@ -88,7 +89,7 @@ export default function Obras() {
         {preview && (
           <div className="mt-6">
             <p className="text-white mb-2">Pré-visualização:</p>
-            <img
+            <Image
               src={preview}
               alt="preview"
               className="w-full rounded-xl shadow-lg border border-white/20"
@@ -117,7 +118,7 @@ export default function Obras() {
             Resultado da IA
           </h2>
 
-          <img
+          <Image
             src={resultImage}
             alt="Resultado"
             className="w-full rounded-xl shadow-xl border border-white/20"

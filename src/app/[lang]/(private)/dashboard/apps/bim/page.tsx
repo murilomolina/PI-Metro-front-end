@@ -2,9 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
-// @ts-ignore
 import { IFCLoader } from 'web-ifc-three/IFCLoader';
-// @ts-ignore
+// @ts-expect-error OrbitControls não possui types incluídos no pacote
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 export default function BIM() {

@@ -12,7 +12,7 @@ export default function SettingsPage() {
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setLoading(true);

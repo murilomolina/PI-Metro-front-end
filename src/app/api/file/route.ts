@@ -17,6 +17,6 @@ export async function GET(req: Request) {
       }
     });
   } catch (err) {
-    return NextResponse.json({ error: "File not found" }, { status: 404 });
+    return NextResponse.json({ error: "File not found ", err }, { status: 404 });
   }
 }
