@@ -56,6 +56,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      react-ifc-viewer:
+        specifier: ^0.7.9
+        version: 0.7.9(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.175.0)(web-ifc@0.0.66)
       swiper:
         specifier: ^11.2.6
         version: 11.2.6
@@ -66,11 +69,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       three:
-        specifier: ^0.181.2
-        version: 0.181.2
-      web-ifc-three:
-        specifier: ^0.0.126
-        version: 0.0.126(three@0.181.2)
+        specifier: ^0.175.0
+        version: 0.175.0
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -1921,6 +1921,14 @@ packages:
     peerDependencies:
       react: ^19.0.0
 
+  react-ifc-viewer@0.7.9:
+    resolution: {integrity: sha512-lp+w8l0LzWjx48DUNNyiuxglw7StLPc5lZe6ETGb25cMwCZA8kWc29ovWbgSK8OZlve1CMnhq++1m5929J/pbA==}
+    peerDependencies:
+      react: ^19.0.0
+      react-dom: ^19.0.0
+      three: ^0.175.0
+      web-ifc: ^0.0.66
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -2154,13 +2162,8 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
-  three-mesh-bvh@0.5.21:
-    resolution: {integrity: sha512-TGXPk7YwtlU5rgQJYA25OT6yAdBMeekfC4BTkGNtTWA5glb2rmEpjxvhZncRQSl73QZir2LFOQT0FjfzgG55xw==}
-    peerDependencies:
-      three: '>= 0.123.0'
-
-  three@0.181.2:
-    resolution: {integrity: sha512-k/CjiZ80bYss6Qs7/ex1TBlPD11whT9oKfT8oTGiHa34W4JRd1NiH/Tr1DbHWQ2/vMUypxksLnF2CfmlmM5XFQ==}
+  three@0.175.0:
+    resolution: {integrity: sha512-nNE3pnTHxXN/Phw768u0Grr7W4+rumGg/H6PgeseNJojkJtmeHJfZWi41Gp2mpXl1pg1pf1zjwR4McM1jTqkpg==}
 
   throttleit@2.1.0:
     resolution: {integrity: sha512-nt6AMGKW1p/70DF/hGBdJB57B8Tspmbp5gfJ8ilhLnt7kkr2ye7hzD6NVG8GGErk2HWF34igrL2CXmNIkzKqKw==}
@@ -2261,13 +2264,8 @@ packages:
   warning@4.0.3:
     resolution: {integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==}
 
-  web-ifc-three@0.0.126:
-    resolution: {integrity: sha512-P2/jcuSZvpLnGiLcd1H+8N01oWuyIjmU5zUy/rzx8HTrbJn7FCE6uC4SFJyYvmxwN6+uFCRmEvzHkfHrdJzpcQ==}
-    peerDependencies:
-      three: ^0.149.0
-
-  web-ifc@0.0.39:
-    resolution: {integrity: sha512-sg+DyxDiyXBqlXXbz+uSqw8IGX+mVvHmn2+hg6UXDvAcrzJJw8EI2H4ZzlxWxCqqdpGVeK0wCpdeQm43UCDbrA==}
+  web-ifc@0.0.66:
+    resolution: {integrity: sha512-IhZKWALbhiq7LKfx4jZIcOPX2VZ+3PDZcPICHhX7Y8ilvofXg4qhPHncCMQibEsgHA25g4bn5o3pQbbhluiZHw==}
 
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
@@ -4239,6 +4237,14 @@ snapshots:
       react: 19.0.0
       scheduler: 0.25.0
 
+  react-ifc-viewer@0.7.9(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.175.0)(web-ifc@0.0.66):
+    dependencies:
+      clsx: 2.1.1
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+      three: 0.175.0
+      web-ifc: 0.0.66
+
   react-is@16.13.1: {}
 
   react-lifecycles-compat@3.0.4: {}
@@ -4529,11 +4535,7 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  three-mesh-bvh@0.5.21(three@0.181.2):
-    dependencies:
-      three: 0.181.2
-
-  three@0.181.2: {}
+  three@0.175.0: {}
 
   throttleit@2.1.0: {}
 
@@ -4648,13 +4650,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  web-ifc-three@0.0.126(three@0.181.2):
-    dependencies:
-      three: 0.181.2
-      three-mesh-bvh: 0.5.21(three@0.181.2)
-      web-ifc: 0.0.39
-
-  web-ifc@0.0.39: {}
+  web-ifc@0.0.66: {}
 
   webidl-conversions@3.0.1: {}
 

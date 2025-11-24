@@ -25,11 +25,11 @@
     "react": "^19.0.0",
     "react-big-calendar": "^1.18.0",
     "react-dom": "^19.0.0",
+    "react-ifc-viewer": "^0.7.9",
     "swiper": "^11.2.6",
     "swr": "^2.3.3",
     "tailwind-merge": "^3.0.2",
-    "three": "^0.181.2",
-    "web-ifc-three": "^0.0.126"
+    "three": "^0.175.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

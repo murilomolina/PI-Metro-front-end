@@ -43,6 +43,6 @@ export const config: MiddlewareConfig = {
      * - _next/image (image optimization files)
      * - favicon.ico, sitemap.xml, robots.txt (metadata files)
      */
-    "/((?!api|_next/static|_next/image|images|public|favicon.ico|assets).*)",
+    "/((?!api|_next/static|_next/image|images|public|favicon.ico|assets|MB-1.04.04.00-6J2-1002-1_v21.ifc|wasm/web-ifc.wasm).*)",
   ],
 };
