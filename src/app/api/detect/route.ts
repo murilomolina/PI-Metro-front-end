@@ -8,7 +8,7 @@ export async function GET(req: Request) {
   if (!id) return NextResponse.json({ error: "missing id" }, { status: 400 });
 
   const jsonPath = `/home/ubuntu/uploads/${id}.json`;
-  console.log(`${id}`);
+  // console.log(`${id}`);
 
   try {
     const raw = await fs.readFile(jsonPath, "utf-8");

@@ -140,13 +140,13 @@ export default function BIM() {
         Selecionar arquivo BIM
         <input type="file" accept=".ifc,.bim" onChange={handleFile} className="hidden" />
       </label>
-
-      {fileName && <p className="mt-2 text-white italic">Arquivo selecionado: {fileName}</p>}
+      <p className="mt-1 text-sm text-gray-400 italic">O carregamento do modelo pode levar algum tempo, dependendo do tamanho do arquivo.</p>
+      {fileName && <p className="mt-1 text-white italic">Arquivo selecionado: {fileName}</p>}
       {errorMessage && <p className="mt-1 text-red-400 italic">{errorMessage}</p>}
 
       <div
         ref={containerRef}
-        className="w-full mt-6 flex-1 rounded-xl border border-gray-700 shadow-xl overflow-hidden
+        className="w-full mt-5 flex-1 rounded-xl border border-gray-700 shadow-xl overflow-hidden
                    h-[70vh] md:h-[80vh] lg:h-[90vh] bg-gray-800"
       />
     </div>

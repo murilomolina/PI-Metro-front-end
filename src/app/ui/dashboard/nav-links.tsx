@@ -8,7 +8,7 @@ import clsx from "clsx";
 const links = [
   { name: "Dashboard", href: "/dashboard/", icon: Icons.Squares2X2Icon },
   { name: "Apps", href: "/dashboard/apps", icon: Icons.CubeIcon },
-  { name: "Settings", href: "/dashboard/settings", icon: Icons.Cog6ToothIcon },
+  { name: "Cadastrar Usuário", href: "/dashboard/settings", icon: Icons.UserGroupIcon },
   { name: "Site", href: "/", icon: Icons.HomeIcon },
 ];
 
