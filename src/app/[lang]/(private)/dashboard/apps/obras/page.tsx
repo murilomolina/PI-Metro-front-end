@@ -37,6 +37,9 @@ export default function Obras() {
 
     //  PEGA O id
     setUploadId(data.id);
+
+    setFile(null); // evita reenvios
+    setResultImage(null);
   }
 
   // 🔄 Verifica o JSON apenas do uploadId atual
@@ -55,7 +58,7 @@ export default function Obras() {
 
       if (data.detected === true) {
         setProcessing(false);
-
+        console.log(data);
         setResultImage(`/api/file?path=${encodeURIComponent(data.output)}`);
 
         clearInterval(interval);
@@ -67,7 +70,7 @@ export default function Obras() {
 
 
   return (
-  <div className="max-h-screen flex flex-col justify-start items-center gap-6 p-6">
+  <div className="min-h-screen flex flex-col justify-start items-center gap-6 p-6">
     <h1 className="text-3xl text-white font-bold">Análise de Obra pela IA</h1>
 
     {/* Container que junta preview + resultado lado a lado */}
@@ -118,11 +121,9 @@ export default function Obras() {
             Resultado da IA
           </h2>
 
-          <Image
-            src={resultImage}
+          <img
+            src={resultImage + `&noCache=${Date.now()}`}
             alt="Resultado"
-            width={500}
-            height={500}
             className="w-full rounded-xl shadow-xl border border-white/20"
           />
         </div>

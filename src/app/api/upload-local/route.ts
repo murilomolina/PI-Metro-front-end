@@ -2,18 +2,23 @@ import { NextResponse } from "next/server";
 import { writeFile } from "fs/promises";
 import fs from "fs/promises";
 import path from "path";
-import crypto from "crypto";
+import { auth } from "@/auth";
+
 
 export async function POST(req: Request) {
   const formData = await req.formData();
   const file = formData.get("file") as File;
+  const session = await auth();
+  if (!session?.user) {
+    return NextResponse.json({ error: "Não autorizado" }, { status: 401 });
+  }
 
   if (!file) {
     return NextResponse.json({ error: "Nenhum arquivo enviado." }, { status: 400 });
   }
 
   // gera id único
-  const id = crypto.randomBytes(4).toString("hex");
+  const id = session.user.email!.replace(/[@.]/g, "_");
 
   const home = "/home/ubuntu/uploads";
   await fs.mkdir(home, { recursive: true });
@@ -28,7 +33,11 @@ export async function POST(req: Request) {
     id,
     input: inputPath,
     output: path.join(home, `${id}-output.png`),
-    detected: false
+    detected: false,
+    machine: false,
+    pillar: false,
+    building: false,
+    window: false,
   };
 
   await writeFile(jsonPath, JSON.stringify(jsonData, null, 2));

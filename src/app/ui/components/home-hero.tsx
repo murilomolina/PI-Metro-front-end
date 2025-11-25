@@ -22,7 +22,7 @@ export default function HomeHero() {
       </h1>
 
       <p className="max-w-xl text-blue-300 text-lg md:text-xl mb-10 leading-relaxed">
-        Visualize e acompanhe o desenvolvimnto das obras do Metrô!.
+        Visualize e acompanhe o desenvolvimento das obras do Metrô.
       </p>
 
       <style>{`
